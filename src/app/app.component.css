@@ -1,0 +1,11 @@
+.col-md-13{
+    background-color:gray;
+    border: 1px solid none;
+    margin-left: 150px;
+    margin-right:200px;
+    margin-top:70px;
+    height: 100%;
+    width:800px;
+    padding: 10px;
+    box-shadow: 55px 50px 60px #888888, 0 10px 20px  #888888;
+}
