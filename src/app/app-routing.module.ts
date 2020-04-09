@@ -5,7 +5,7 @@ import {CategoryComponent} from './category/category.component';
 import {NewsDetailComponent} from './news-detail/news-detail.component';
 import {AboutComponent} from './shared/about/about.component';
 const routes: Routes = [
-  {path: '', redirectTo: 'categories', pathMatch: 'full'},
+  {path: '', redirectTo: 'about', pathMatch: 'full'},
   {path: 'about', component: AboutComponent },
   {path:'categories', component:CategoryComponent},
   {path:'categories/:category_id/news', component:NewsListComponent},
