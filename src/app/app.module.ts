@@ -10,6 +10,7 @@ import { CategoryComponent } from './shared/category/category.component';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
 import { NewsItemComponent } from './news-item/news-item.component';
 import { NewsListComponent } from './news-list/news-list.component';
+import { AboutComponent } from './shared/about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NewsListComponent } from './news-list/news-list.component';
     CategoryComponent,
     NewsDetailComponent,
     NewsItemComponent,
-    NewsListComponent
+    NewsListComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule
