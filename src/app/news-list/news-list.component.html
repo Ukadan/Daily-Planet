@@ -1,1 +1,17 @@
-<p>news-list works!</p>
+<div class = "themainpage">
+   
+
+    <!-- 10 products -->
+    <div class="flex-row-container">
+        <div class="flex-row-item" *ngFor="let item of items">
+            
+            <app-news-item [News[]]="items">
+               
+            </app-news-item>
+            
+        </div>
+        <!-- 10 products -->
+    </div>
+
+
+</div>

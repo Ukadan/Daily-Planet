@@ -1,1 +1,67 @@
-<p>news-detail works!</p>
+<div class="col-md-4">
+
+    <div class="main1">
+        <!-- --------------------------------------------------------------------------------------------------------- -->
+        <div class="photo1">
+            <h3>
+                {{ item.title }}
+            </h3>
+            <a title="Title" href="" target="_blank">
+                <img class="photoSize" src="{{ item.image }}">
+            </a>
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------- -->
+        <div class="context1">
+            
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+            <p *ngIf="item.text">
+              
+                {{ item.text }}
+            </p>
+            <!-- onclick="count()" -->
+            <p *ngIf="item.likes" id = "view" >
+                <button class="like" >Like</button> Likes: {{item.likes}} 
+            </p>
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+            <p *ngIf="item.dislikes">
+               <button class="like" >Dislike</button> Dislikes:  {{ item.dislikes }}
+            </p>
+            <!---------------------------------------------------------------------------------------------------------------------------->
+            <br><br><button class="event" (click)="goBack()">Go back</button>
+            
+
+            <label>News' title:
+                <input #newsTitle />
+              </label>
+
+
+        <label>News' text:
+                <input #newsText />
+              </label>
+              <textarea  cols="30" rows="10" >News's text:
+                <input #newsText/>
+              </textarea>
+
+           
+            <!-- <br><br><button class="event" (click)="add(newsCategoryId.value, newsTitle.value, newsImage.value, newsText.value, newsLikes.value, newsDislkes.value); newsCategoryId.value=1 newsTitle.value=''">Add news</button> -->
+            <br><br><button class="event" (click)="delete(item)">Delete news</button>
+            <br><br><button class="event" (click)="save()">Save</button>
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+            <div  class="share1">
+                <a target="_blank" href="https://api.whatsapp.com/send?text=See%20this!%20url={{123456789}}" data-action="share/whatsapp/share">
+                    <img id="whatsapp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/1024px-WhatsApp_logo-color-vertical.svg.png">
+                </a>
+
+                <a target="_blank" href="https://t.me/share/url?url={{123456789}}" data-action="share/whatsapp/share">
+                    <img id="telegram" src="https://image.winudf.com/v2/image1/Y29tLndXaGF0c2FwcGpiXzg2MTY3NTRfaWNvbl8xNTUwNzI3OTE1XzA1OA/icon.png?w=170&fakeurl=1">
+                </a>
+            </div>
+            <!-- --------------------------------------------------------------------------------------------------------- -->
+        </div>
+        <!-- --------------------------------------------------------------------------------------------------------- -->
+    </div>
+    <br>
+    <script src = "Motor.js" ></script>
+
+</div>

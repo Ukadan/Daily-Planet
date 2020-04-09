@@ -1,1 +1,9 @@
-<p>category works!</p>
+
+<div class="top">
+    <h2>Categories:</h2>
+
+    <ul *ngFor="let category of categories">
+        <li><a [title]="category.name + ' details'" routerLink="/categories/{{category.id}}/news">{{category.name}}</a></li>
+
+    </ul>
+</div>
