@@ -10,32 +10,22 @@ import { News } from './news-list/news';
 })
 export class NewsService {
 
-  private newsUrl = 'api/news';
-  private categoryUrl = 'api/categories';
-  private cnewsUrl = 'news';
+
+  BASE_URL = 'http://localhost:8000'
+
   constructor(
     private http: HttpClient,
   ) { }
 
-  getOneNews(id: number): Observable<News>  {
-    const url = `${this.newsUrl}/${id}`;
-    return this.http.get<News>(url).pipe(
-      catchError(this.handleError<News>(`getOneNews id=${id}`))
-    );
+  getNews(): Observable<News[]> {
+    return this.http.get<News[]>(`${this.BASE_URL}/api/news/`);
   }
 
-  getNews(): Observable<News[]>  {
-    return this.http.get<News[]>(this.newsUrl)
-    .pipe(
-      catchError(this.handleError<News[]>('getNews', []))
-    );
+  getOneNews(id): Observable<News> {
+    return this.http.get<News>(`${this.BASE_URL}/api/${id}/news/`)
   }
-
-  getNewsByCategoryId(category_id: number): Observable<News[]>  {
-    const url = `${this.categoryUrl}/${category_id}/news`;
-    return this.http.get<News[]>(url).pipe(
-      catchError(this.handleError<News[]>(`getNewsByCategoryId category_id=${category_id}`))
-    );
+  getNewsByCategoryId(category_id): Observable<News[]> {
+    return this.http.get<News[]>(`${this.BASE_URL}/api/categories/${category_id}/news/`);
   }
   
 

@@ -12,8 +12,7 @@ import { News } from '../news-list/news';
 export class CategoryComponent implements OnInit {
 
   items: News[];
-  // category: Categories;
-  categories: Categories[];
+  categories: Categories[]= [];
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -33,13 +32,9 @@ export class CategoryComponent implements OnInit {
     const category_id = +this.route.snapshot.paramMap.get('id');
     this.newsService.getNewsByCategoryId(category_id).subscribe(items => this.items = items);
   }
-  // getCategory() {
-  //   const id = +this.route.snapshot.paramMap.get('id');
-  //   this.categoryService.getCategory(id).subscribe(category => this.category = category);
-  // }
-
   getCategories(){
-    this.categoryService.getCategories().subscribe(categories => this.categories = categories);
+    this.categoryService.getCategories().subscribe(categories => {this.categories = categories});
   }
+}
 }
 // ilblib
