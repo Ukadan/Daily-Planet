@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4ef7b3a-0097-44eb-b073-a236b4d2b82b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aqAgryBQDx1JbPj5Dqzwk64Lyr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZeuS\Desktop\DailyPlanet\api\views" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4ef7b3a-0097-44eb-b073-a236b4d2b82b" name="Default Changelist" comment="" />
+      <created>1587452864565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587452864565</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="192" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587735395881">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="192" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1474.864@0.0.1474.864" timestamp="1587735395881" />
+    <state x="268" y="90" key="DBNavigator.ProjectSettingsDialog" timestamp="1587894942709">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="268" y="90" key="DBNavigator.ProjectSettingsDialog/0.0.1474.864@0.0.1474.864" timestamp="1587894942709" />
+    <state x="518" y="190" key="FileChooserDialogImpl" timestamp="1587879464365">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="518" y="190" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1587879464365" />
+    <state x="497" y="78" key="SettingsEditor" timestamp="1587735445876">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="497" y="78" key="SettingsEditor/0.0.1474.864@0.0.1474.864" timestamp="1587735445876" />
+    <state x="813" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1587892790299">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="813" y="260" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1587892790299" />
+  </component>
+</project>
