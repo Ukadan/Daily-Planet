@@ -3,6 +3,9 @@ from django.db import models
 # Create your models here.
 
 class Category(models.Model):
+    class Meta:
+        verbose_name_plural = 'categories'
+
     name = models.CharField(max_length=100)
     pass
 
@@ -13,6 +16,10 @@ class Category(models.Model):
         }
 
 class Author(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'authors'
+
     firstName = models.CharField(max_length=40)
     lastName = models.CharField(max_length=50)
     age = models.IntegerField(default=24)
@@ -27,6 +34,9 @@ class Author(models.Model):
         }
 
 class News(models.Model):
+    class Meta:
+        verbose_name_plural = 'news'
+
     title = models.CharField(max_length=100)
     image = models.CharField(max_length=300,default='')
     text = models.CharField(max_length=500)
